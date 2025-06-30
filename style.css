@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,800;1,800&display=swap');
+
+:root{
+    --color-yellow: #f4d04e;
+    --color-gray-950: #111111;
+    --color-gray-500: #6b6b6b;
+    --color-white: #fff;
+    --transition-duration: .5s;
+}
+
+body{
+    background-color: var(--color-yellow);
+    font-family: "Figtree", sans-serif;
+    vertical-align: middle;
+}
+
+.text_presset1{
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 800;
+    color: var(--color-gray-950);
+    text-decoration: none;
+}
+
+.text_presset2{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-gray-500);
+}
+
+.text_presset3{
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-gray-950);
+    margin: 0;
+}
+
+.text_presset3_bold{
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0;
+    font-weight: 800;
+    color: var(--color-gray-950);
+    margin: 0;
+}
+
+.card{
+    position: relative;
+    --width: 334px;
+    --height: fit-content;
+    width: var(--width);
+    height: var(--height);
+    top: 50%;
+    left: 50%;
+    margin-top: calc(var(--height)* -1);
+    margin-left: calc(var(--width)/2 * -1);
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid var(--color-gray-950);
+    transition-duration: var(--transition-duration);
+    box-shadow: 8px 8px 0 0 var(--color-gray-950);
+    display: block;
+    &:hover{
+        transition-duration: var(--transition-duration);
+        box-shadow: 12px 12px 0 2px var(--color-gray-950);
+        .card-text .card-text-title a {
+        transition-duration: var(--transition-duration);
+        color: var(--color-yellow);
+        }
+    } 
+}
+
+.card-text{
+    width: fit-content;
+    height: fit-content;
+    .card-text-date, .card-text-info, .card-text-title, .card-text-signature, .card-text-type{
+        margin-top: 12px;
+    }
+}
+
+.card-text-type{
+    border-radius: 4px;
+    background-color: var(--color-yellow);
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 12px;
+}
+
+.card-text-date{
+    width: fit-content;
+    height: fit-content;
+}
+.card-text-title{
+    width: fit-content;
+    height: fit-content;
+    .text_presset1{
+        transition-duration: var(--transition-duration);
+    }
+}
+
+.card-text-info{
+    width: auto;
+    height: fit-content;
+}
+
+.card-text-signature{
+    width: fit-content;
+    height: 32px;
+    display: flex;
+    margin: 0;
+    .text_presset3_bold{
+            vertical-align: middle;
+            line-height: -50%;
+    }
+}
+
+.card-text-signature img{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    text-align: left;
+    align-items: center;
+    display: inline;
+}
+.card-image{
+    margin: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.card-image img{
+    border-radius: 10px;
+    height: 200px;
+    width: fit-content;
+    text-align: left;
+    left: 0;
+}
